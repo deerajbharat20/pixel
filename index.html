@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wanderly — find your next little adventure.">
+  <meta name="theme-color" content="#f5f3ed">
+  <title>Wanderly — Find your somewhere</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home"><span>✳</span> wanderly</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#destinations">Destinations</a>
+      <a href="#story">Our story</a>
+      <a href="#journal">Travel notes</a>
+      <a class="nav-button" href="#newsletter">Get inspired ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="kicker"><span></span> A DIFFERENT KIND OF GETAWAY</p>
+        <h1>Find your<br><em>somewhere.</em></h1>
+        <p class="intro">For the winding roads, slow mornings, and places that stay with you long after you leave.</p>
+        <a class="button" href="#destinations">Explore places <span>↘</span></a>
+        <div class="hero-note"><strong>✳</strong><span>LESS CHECKLIST.<br>MORE COLLECTING MOMENTS.</span></div>
+      </div>
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85" alt="Mountain lake surrounded by green hills">
+        <div class="photo-label"><span>01 / 04</span><strong>Somewhere in the Alps</strong></div>
+        <div class="round-stamp">GO<br>WHERE<br>YOU GROW</div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <p>THE WORLD IS A LITTLE TOO BIG TO STAY IN ONE PLACE.</p>
+      <span>✳</span>
+      <p>TAKE THE SCENIC ROUTE.</p>
+    </section>
+
+    <section class="destinations section" id="destinations">
+      <div class="section-top">
+        <div><p class="kicker">THE WANDERLIST</p><h2>Places worth<br><em>getting lost in.</em></h2></div>
+        <p class="section-desc">A few places to put on your map. Pick a mood, follow your curiosity, and see where it takes you.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter destinations">
+        <button class="filter active" data-filter="all">All places</button>
+        <button class="filter" data-filter="nature">Nature</button>
+        <button class="filter" data-filter="culture">Culture</button>
+        <button class="filter" data-filter="coast">Coast</button>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Snowy mountain peaks">
+          <div class="card-info"><div><span>SWITZERLAND · NATURE</span><h3>The quiet heights</h3></div><b>↗</b></div>
+        </article>
+        <article class="destination-card" data-category="culture">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" alt="Traditional Kyoto street">
+          <div class="card-info"><div><span>JAPAN · CULTURE</span><h3>Old streets, new stories</h3></div><b>↗</b></div>
+        </article>
+        <article class="destination-card" data-category="coast">
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=85" alt="Turquoise sea and tropical beach">
+          <div class="card-info"><div><span>GREECE · COAST</span><h3>Blue on blue</h3></div><b>↗</b></div>
+        </article>
+        <article class="destination-card" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=85" alt="Sunlit forest and deer">
+          <div class="card-info"><div><span>CANADA · NATURE</span><h3>Into the wild</h3></div><b>↗</b></div>
+        </article>
+        <article class="destination-card" data-category="culture">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85" alt="Colorful coastal Italian village">
+          <div class="card-info"><div><span>ITALY · CULTURE</span><h3>Life in full color</h3></div><b>↗</b></div>
+        </article>
+        <article class="destination-card" data-category="coast">
+          <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85" alt="Ocean waves rolling onto a beach">
+          <div class="card-info"><div><span>PORTUGAL · COAST</span><h3>Chasing the tide</h3></div><b>↗</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section" id="story">
+      <div class="quote-image"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1100&q=85" alt="Sunlight through a peaceful forest"></div>
+      <div class="quote-copy"><p class="kicker">A NOTE FROM WANDERLY</p><h2>Travel isn't just<br>about <em>where.</em></h2><p>It's the unexpected café, the kind stranger, the view you didn't plan for. We made Wanderly for people who believe the best parts of a journey are often the ones you never scheduled.</p><a href="#journal" class="underlink">A little more about our philosophy ↗</a></div>
+    </section>
+
+    <section class="journal section" id="journal">
+      <div class="section-top"><div><p class="kicker">POSTCARDS & THOUGHTS</p><h2>Travel <em>notes.</em></h2></div><p class="section-desc">Tiny reminders and ideas for making every trip feel a little more like your own.</p></div>
+      <div class="journal-grid">
+        <article><span>01 — SLOW TRAVEL</span><h3>The art of leaving a little room in the plan</h3><p>Why the best itinerary might be the one with a few blank spaces.</p><a href="#newsletter">Read the note ↗</a></article>
+        <article><span>02 — PACKING LIGHT</span><h3>Take less. Notice more.</h3><p>A gentle reminder that you don't need to bring your whole world with you.</p><a href="#newsletter">Read the note ↗</a></article>
+        <article><span>03 — LOCAL FINDS</span><h3>Find the places between the landmarks</h3><p>Follow the side streets, local markets, and little recommendations.</p><a href="#newsletter">Read the note ↗</a></article>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div><p class="kicker">A POSTCARD FOR YOUR INBOX</p><h2>A little inspiration<br>goes a <em>long way.</em></h2></div>
+      <form id="newsletter-form">
+        <label for="email">Get occasional travel notes. No noise, just good ideas.</label>
+        <div class="email-row"><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">→</button></div>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+      <span class="newsletter-flower">✳</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home"><span>✳</span> wanderly</a>
+    <p>Go gently. See plenty. © <span id="year"></span> Wanderly</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
